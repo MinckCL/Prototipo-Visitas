@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Visitas Técnicas - Inicio de Sesión</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0f172a","background-light": "#f6f7f8",
+                        "background-dark": "#14171e",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+        }.touch-target {
+            min-height: 44px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#111318] dark:text-white antialiased min-h-screen flex flex-col">
+<div class="relative flex h-full min-h-screen w-full flex-col overflow-x-hidden group/design-root">
+<header class="relative bg-primary pt-14 pb-12 rounded-b-[2rem] shadow-lg overflow-hidden">
+<div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 20px 20px;">
+</div>
+<div class="relative z-10 flex flex-col items-center justify-center px-4">
+<div class="h-14 w-14 bg-white/10 backdrop-blur-md rounded-xl flex items-center justify-center mb-4 border border-white/20 shadow-inner">
+<span class="material-symbols-outlined text-white text-3xl">construction</span>
+</div>
+<h1 class="text-white text-xl font-bold leading-tight tracking-[-0.015em] text-center">Visitas Técnicas</h1>
+<p class="text-white/70 text-sm font-medium mt-1">Gestión de Construcción</p>
+</div>
+</header>
+<main class="flex-1 flex flex-col items-center px-4 -mt-6 z-20 w-full max-w-[480px] mx-auto pb-8">
+<div class="w-full bg-white dark:bg-[#1a1f2b] rounded-2xl shadow-xl border border-[#d5d9e2] dark:border-gray-700 p-6 sm:p-8">
+<h2 class="text-[#111318] dark:text-white tracking-tight text-2xl font-bold leading-tight text-center pb-2">Inicio de Sesión</h2>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal pb-6 text-center">Accede a tu panel de proyectos para gestionar las visitas en obra.</p>
+<div class="flex flex-col gap-5">
+<label class="flex flex-col w-full">
+<p class="text-[#111318] dark:text-gray-200 text-sm font-semibold leading-normal pb-2">Correo Electrónico</p>
+<div class="relative">
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111318] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/20 border border-[#d5d9e2] dark:border-gray-600 bg-gray-50 dark:bg-gray-800 focus:border-primary h-11 touch-target placeholder:text-[#5d6a89] dark:placeholder:text-gray-500 p-[12px] text-base font-normal leading-normal transition-all" placeholder="nombre@empresa.com" type="email" value=""/>
+</div>
+</label>
+<label class="flex flex-col w-full">
+<div class="flex justify-between items-end pb-2">
+<p class="text-[#111318] dark:text-gray-200 text-sm font-semibold leading-normal">Contraseña</p>
+</div>
+<div class="flex w-full flex-1 items-stretch rounded-lg group focus-within:ring-2 focus-within:ring-primary/20">
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-l-lg text-[#111318] dark:text-white focus:outline-0 focus:ring-0 border border-[#d5d9e2] dark:border-gray-600 bg-gray-50 dark:bg-gray-800 focus:border-primary h-11 touch-target placeholder:text-[#5d6a89] dark:placeholder:text-gray-500 p-[12px] border-r-0 text-base font-normal leading-normal transition-colors" placeholder="Introduce tu contraseña" type="password" value=""/>
+<div class="text-[#5d6a89] dark:text-gray-400 flex border border-[#d5d9e2] dark:border-gray-600 bg-gray-50 dark:bg-gray-800 items-center justify-center pr-[12px] pl-2 rounded-r-lg border-l-0 cursor-pointer hover:text-primary dark:hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[24px]">visibility</span>
+</div>
+</div>
+<div class="flex justify-end mt-3">
+<a class="text-sm font-medium text-primary dark:text-white/80 hover:underline inline-flex items-center touch-target" href="#">¿Olvidaste tu contraseña?</a>
+</div>
+</label>
+<button class="mt-2 flex w-full items-center justify-center rounded-lg bg-primary hover:bg-slate-800 text-white h-11 touch-target text-base font-bold shadow-md shadow-primary/20 active:scale-[0.98] transition-all">
+                        Entrar
+                    </button>
+</div>
+</div>
+<div class="mt-8 flex flex-col items-center gap-4">
+<p class="text-sm text-gray-500 dark:text-gray-400">
+                    ¿Necesitas ayuda para entrar? <a class="font-semibold text-primary dark:text-white hover:underline" href="#">Soporte Técnico</a>
+</p>
+<div class="flex items-center gap-2 text-xs text-gray-400">
+<span class="material-symbols-outlined text-[16px]">lock</span>
+<span>Conexión Segura</span>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Manager Global Dashboard</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0F172A",
+                        "background-light": "#F3F4F6",
+                        "emerald-accent": "#10B981",
+                        "orange-accent": "#F97316",
+                        "blue-accent": "#3B82F6"
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .chart-ring {
+            background: conic-gradient(#10B981 0deg 252deg, #3B82F6 252deg 306deg, #F97316 306deg 360deg);
+            border-radius: 50%;
+        }
+        .chart-ring-inner {
+            background: white;
+            border-radius: 50%;
+        }
+    </style>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light font-display text-gray-900 antialiased overflow-hidden">
+<div class="relative flex h-full min-h-screen w-full flex-col overflow-hidden">
+<header class="bg-primary pt-12 pb-6 px-5 shadow-lg z-20 shrink-0">
+<div class="flex items-start justify-between gap-4">
+<div class="flex items-start gap-3">
+<div>
+<h2 class="text-white text-xl font-bold leading-tight tracking-tight">Panel Global de Gerencia</h2>
+<p class="text-white/60 text-[11px] font-medium uppercase tracking-wider mt-0.5">Visitas Técnicas • Ejecutivo</p>
+</div>
+</div>
+<button class="flex items-center gap-2 bg-[#1E293B] hover:bg-white/20 active:bg-white/30 backdrop-blur-sm px-4 py-3 rounded-xl border border-white/10 transition-all">
+<span class="material-symbols-outlined text-white text-[18px]">sync</span>
+<span class="text-white text-xs font-semibold">Sincronizar Ahora</span>
+</button>
+</div>
+</header>
+<main class="flex-1 flex flex-col overflow-hidden relative">
+<div class="sticky top-0 z-10 bg-white border-b border-gray-100 shrink-0">
+<div class="flex gap-3 p-4 overflow-x-auto no-scrollbar items-center">
+<button class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gray-50 border border-gray-100 text-gray-400">
+<span class="material-symbols-outlined text-[20px]">filter_alt</span>
+</button>
+<button class="flex h-10 shrink-0 items-center gap-1.5 rounded-full bg-primary text-white px-5 text-sm font-semibold">
+                        Obra <span class="material-symbols-outlined text-[16px]">expand_more</span>
+</button>
+<button class="flex h-10 shrink-0 items-center gap-1.5 rounded-full bg-white border border-gray-200 px-5 text-sm font-medium text-gray-600">
+                        Estado <span class="material-symbols-outlined text-[16px]">expand_more</span>
+</button>
+<button class="flex h-10 shrink-0 items-center gap-1.5 rounded-full bg-white border border-gray-200 px-5 text-sm font-medium text-gray-600">
+                        Fecha <span class="material-symbols-outlined text-[16px]">calendar_today</span>
+</button>
+</div>
+</div>
+<div class="flex-1 overflow-y-auto p-4 space-y-4 pb-24">
+<div class="grid grid-cols-3 gap-3">
+<div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100/50">
+<p class="text-[10px] font-bold text-gray-400 uppercase tracking-wider mb-1">Total</p>
+<p class="text-2xl font-bold text-gray-900 leading-none">128</p>
+</div>
+<div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100/50">
+<p class="text-[10px] font-bold text-emerald-accent uppercase tracking-wider mb-1">Terminado</p>
+<p class="text-2xl font-bold text-emerald-accent leading-none">82</p>
+</div>
+<div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100/50">
+<p class="text-[10px] font-bold text-orange-accent uppercase tracking-wider mb-1">Abiertas</p>
+<p class="text-2xl font-bold text-orange-accent leading-none">46</p>
+</div>
+</div>
+<div class="bg-white p-6 rounded-3xl shadow-sm border border-gray-100/50">
+<h3 class="text-base font-bold text-gray-800 mb-6">Productividad General</h3>
+<div class="flex items-center justify-between">
+<div class="relative size-40 chart-ring flex items-center justify-center">
+<div class="size-28 chart-ring-inner flex flex-col items-center justify-center">
+<span class="text-3xl font-black text-gray-900">64%</span>
+<span class="text-[10px] text-gray-400 font-bold uppercase tracking-widest mt-1">Eficacia</span>
+</div>
+</div>
+<div class="space-y-4 pr-2">
+<div class="flex items-center gap-3">
+<div class="size-3 rounded-full bg-emerald-accent"></div>
+<div>
+<p class="text-[11px] text-gray-400 font-bold uppercase tracking-wide">Terminadas</p>
+<p class="text-sm font-bold text-gray-800">82 (70%)</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="size-3 rounded-full bg-orange-accent"></div>
+<div>
+<p class="text-[11px] text-gray-400 font-bold uppercase tracking-wide">Pendientes</p>
+<p class="text-sm font-bold text-gray-800">28 (15%)</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="size-3 rounded-full bg-blue-accent"></div>
+<div>
+<p class="text-[11px] text-gray-400 font-bold uppercase tracking-wide">En Proceso</p>
+<p class="text-sm font-bold text-gray-800">18 (15%)</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white p-6 rounded-3xl shadow-sm border border-gray-100/50">
+<h3 class="text-base font-bold text-gray-800 mb-6">Estado Operativo</h3>
+<div class="space-y-8">
+<div class="space-y-3">
+<div class="flex justify-between items-end">
+<span class="text-orange-accent text-sm font-bold">Pendientes</span>
+<span class="text-gray-900 text-sm font-bold">28</span>
+</div>
+<div class="w-full bg-gray-50 h-3.5 rounded-full overflow-hidden">
+<div class="bg-orange-accent h-full w-[65%] rounded-full"></div>
+</div>
+</div>
+<div class="space-y-3">
+<div class="flex justify-between items-end">
+<span class="text-blue-accent text-sm font-bold">En Proceso</span>
+<span class="text-gray-900 text-sm font-bold">18</span>
+</div>
+<div class="w-full bg-gray-50 h-3.5 rounded-full overflow-hidden">
+<div class="bg-blue-accent h-full w-[40%] rounded-full"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-3xl shadow-sm border border-gray-100/50 overflow-hidden">
+<div class="p-6 pb-2 flex justify-between items-center">
+<h3 class="text-base font-bold text-gray-800">Detalle de Solicitudes</h3>
+<span class="text-[11px] font-bold text-gray-600 bg-gray-100 px-3 py-1.5 rounded-lg">Activas: 46</span>
+</div>
+<div class="overflow-x-auto no-scrollbar">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr>
+<th class="pl-6 pr-4 py-4 text-[10px] font-bold text-gray-400 uppercase tracking-widest whitespace-nowrap">Obra</th>
+<th class="px-4 py-4 text-[10px] font-bold text-gray-400 uppercase tracking-widest whitespace-nowrap">Fecha</th>
+<th class="px-4 py-4 text-[10px] font-bold text-gray-400 uppercase tracking-widest whitespace-nowrap text-center">Días</th>
+<th class="px-4 py-4 text-[10px] font-bold text-gray-400 uppercase tracking-widest whitespace-nowrap">Detalle</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-gray-50">
+<tr>
+<td class="pl-6 pr-4 py-5 text-sm font-bold text-gray-900">Torre Alpha</td>
+<td class="px-4 py-5 text-sm text-gray-400 font-medium whitespace-nowrap">24 Oct</td>
+<td class="px-4 py-5 text-sm font-black text-gray-900 text-center leading-tight">3d<br/>4h</td>
+<td class="px-4 py-5 text-sm text-gray-500 max-w-[180px] truncate">Inspección estructural...</td>
+</tr>
+<tr>
+<td class="pl-6 pr-4 py-5 text-sm font-bold text-gray-900">Centro Beta</td>
+<td class="px-4 py-5 text-sm text-gray-400 font-medium whitespace-nowrap">25 Oct</td>
+<td class="px-4 py-5 text-sm font-black text-gray-900 text-center leading-tight">2d<br/>1h</td>
+<td class="px-4 py-5 text-sm text-gray-500 max-w-[180px] truncate">Revisión tableros e...</td>
+</tr>
+<tr>
+<td class="pl-6 pr-4 py-5 text-sm font-bold text-gray-900">Muelle Sur</td>
+<td class="px-4 py-5 text-sm text-gray-400 font-medium whitespace-nowrap">26 Oct</td>
+<td class="px-4 py-5 text-sm font-black text-gray-900 text-center leading-tight">0d<br/>5h</td>
+<td class="px-4 py-5 text-sm text-gray-500 max-w-[180px] truncate">Control de corrosi...</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<nav class="shrink-0 bg-white border-t border-gray-100 pb-10 pt-4 px-6 z-30">
+<div class="flex justify-between items-center h-12 px-4">
+<button class="flex flex-col items-center justify-center gap-1.5 text-primary">
+<span class="material-symbols-outlined text-[28px] fill-[1]">dashboard</span>
+<span class="text-[11px] font-bold">Panel</span>
+</button>
+<button class="flex flex-col items-center justify-center gap-1.5 text-gray-400">
+<span class="material-symbols-outlined text-[28px]">settings</span>
+<span class="text-[11px] font-medium">Config</span>
+</button>
+<button class="flex flex-col items-center justify-center gap-1.5 text-gray-400">
+<span class="material-symbols-outlined text-[28px]">account_circle</span>
+<span class="text-[11px] font-medium">Perfil</span>
+</button>
+</div>
+</nav>
+</main>
+</div>
+
+</body></html>

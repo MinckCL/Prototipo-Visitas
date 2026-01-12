@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Detalle de Orden con Título y Cierre</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0F172A",
+                        "background-light": "#F3F4F6",
+                        "emerald-accent": "#10B981",
+                        "orange-accent": "#F97316",
+                        "blue-accent": "#3B82F6"
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        :root {
+            --emerald-accent: #10B981;
+            --navy-blue: #0F172A;
+        }
+    </style>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light font-display text-gray-900 antialiased overflow-x-hidden">
+<div class="relative flex min-h-screen w-full flex-col">
+<header class="bg-primary pt-12 pb-4 px-4 shadow-lg z-20 shrink-0 sticky top-0">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<button class="text-white hover:bg-white/10 p-1 rounded-full transition-colors">
+<span class="material-symbols-outlined text-2xl">arrow_back_ios_new</span>
+</button>
+<h2 class="text-white text-lg font-bold tracking-tight">Detalle de Orden</h2>
+</div>
+<span class="px-3 py-1 rounded-full bg-blue-accent/20 text-blue-400 text-[10px] font-bold border border-blue-accent/30 flex items-center gap-1.5 uppercase">
+<span class="size-2 bg-blue-accent rounded-full animate-pulse"></span>
+                    En Proceso
+                </span>
+</div>
+</header>
+<main class="flex-1 overflow-y-auto pb-8">
+<div class="p-4 space-y-4">
+<div class="bg-white rounded-2xl p-5 shadow-sm border border-gray-100">
+<div class="space-y-4">
+<div class="space-y-0.5 border-b border-gray-100 pb-3">
+<p class="text-[10px] font-bold text-gray-400 uppercase tracking-wider">Título</p>
+<p class="text-sm font-bold text-primary leading-tight">Inspección de Fisuras en Cimentación Sector B</p>
+</div>
+<div class="grid grid-cols-2 gap-y-4">
+<div class="space-y-0.5">
+<p class="text-[10px] font-bold text-gray-400 uppercase tracking-wider">Obra</p>
+<p class="text-sm font-bold text-primary">Portal K</p>
+</div>
+<div class="space-y-0.5 text-right">
+<p class="text-[10px] font-bold text-gray-400 uppercase tracking-wider">Solicitante</p>
+<p class="text-sm font-semibold text-gray-700">Arq. Marcos V.</p>
+</div>
+<div class="space-y-0.5">
+<p class="text-[10px] font-bold text-gray-400 uppercase tracking-wider">Fecha de Solicitud</p>
+<div class="flex items-center gap-1 text-sm font-medium text-gray-600">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+                                    24 Oct, 2023
+                                </div>
+</div>
+<div class="space-y-0.5 text-right">
+<p class="text-[10px] font-bold text-gray-400 uppercase tracking-wider">Asignado</p>
+<div class="flex items-center justify-end gap-1 text-sm font-medium text-gray-600">
+<span class="material-symbols-outlined text-[16px]">engineering</span>
+                                    Ing. Salas
+                                </div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-2xl p-5 shadow-sm border border-gray-100">
+<h3 class="text-[10px] font-bold text-gray-400 uppercase tracking-wider mb-2">Descripción del Requerimiento</h3>
+<p class="text-[15px] leading-relaxed text-gray-700">
+                        Se requiere inspección estructural urgente en la zona de cimentación del sector B. Se han detectado posibles fisuras tras el último vaciado de concreto y es necesario validar la integridad antes de continuar con el nivel superior.
+                    </p>
+</div>
+<div class="bg-white rounded-2xl p-5 shadow-sm border border-gray-100">
+<h3 class="text-[10px] font-bold text-gray-400 uppercase tracking-wider mb-3">Foto Original de Reporte</h3>
+<div class="relative group aspect-video rounded-xl overflow-hidden bg-gray-100 border border-gray-200">
+<img alt="Foto Original" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtMhXvZ8l-ycSMs6RCXD0XUzFdOYK51y4WLTot-GXfypj1DNvcKNe83Vluj97-dqbllGIZLE_Hh6gdJnfdAUxN7RaPOT603eMWtW5lo35ExkH4Fd0EixRmKcaH1_en0cf8nh1C5u7mkQWzbEjFVKKeKWFoYZC1EhGMQ5WvEAroyV0rHoaBSyxWt0i-D9dWoCEzUfTMmscCo6dB-bXXuak8AyjUX5tXP_euX5I2H2oG27mpkdLf5kE8b-EJWf8_-H0-6ysWu3yGi3Q"/>
+<button class="absolute inset-0 flex items-center justify-center bg-black/20 opacity-0 group-active:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-white text-3xl">fullscreen</span>
+</button>
+<div class="absolute bottom-3 left-3 bg-black/40 backdrop-blur-md px-2 py-1 rounded text-[10px] text-white flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">photo_camera</span>
+                            Captura Inicial
+                        </div>
+</div>
+</div>
+<div class="space-y-3 pt-2">
+<div class="flex items-center justify-between px-1">
+<h3 class="text-[10px] font-bold text-gray-400 uppercase tracking-wider">Historial de Avances</h3>
+</div>
+<div class="bg-white rounded-3xl p-8 shadow-sm border border-gray-100 flex flex-col items-center justify-center text-center">
+<div class="size-16 bg-gray-50 rounded-full flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-gray-300 text-4xl">history_toggle_off</span>
+</div>
+<h4 class="text-sm font-semibold text-gray-900 mb-1">Sin avances registrados</h4>
+<p class="text-xs text-gray-500 mb-8 max-w-[200px] mx-auto leading-relaxed">
+                            Aún no se han documentado intervenciones para esta orden técnica.
+                        </p>
+<div class="w-full max-w-[260px] space-y-3">
+<button class="w-full bg-[var(--emerald-accent)] text-white py-4 px-6 rounded-2xl font-bold text-sm shadow-lg shadow-emerald-500/30 flex items-center justify-center gap-2 active:scale-95 transition-transform">
+<span class="material-symbols-outlined">add_circle</span>
+                                Registrar Avance
+                            </button>
+<button class="w-full bg-slate-900 text-white py-4 px-6 rounded-2xl font-bold text-sm shadow-md shadow-slate-900/20 flex items-center justify-center gap-2 active:scale-95 transition-transform">
+<span class="material-symbols-outlined">task_alt</span>
+                                Cerrar Visita
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Visitas Técnicas - Listado de Tareas</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0f1729",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#14171e",
+                        "status-pending": "#f59e0b",
+                        "status-progress": "#3b82f6",
+                        "status-done": "#10b981",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            min-height: max(884px, 100dvh);
+        }
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-gray-900 dark:text-gray-100 min-h-screen flex flex-col font-display overflow-x-hidden">
+<header class="bg-primary px-4 py-6 sticky top-0 z-50 shadow-md">
+<div class="flex items-center justify-between">
+<h1 class="text-white text-xl font-bold leading-tight tracking-tight flex-1">Mis Tareas Pendientes</h1>
+<div class="flex items-center gap-4">
+<button aria-label="Sincronizar" class="flex items-center justify-center text-white/80 hover:text-white transition-colors">
+<span class="material-symbols-outlined">sync</span>
+</button>
+</div>
+</div>
+</header>
+<div class="bg-amber-100 dark:bg-amber-900/30 border-b border-amber-200 dark:border-amber-800/50">
+<div class="flex items-center justify-center gap-2 py-2 px-4 text-amber-800 dark:text-amber-200">
+<span class="material-symbols-outlined text-[18px]">wifi_off</span>
+<p class="text-xs font-semibold">Modo Offline - Sincronización pendiente</p>
+</div>
+</div>
+<main class="flex-1 flex flex-col p-4 gap-6 pb-24">
+<section aria-label="Estadísticas de Tareas">
+<div class="flex gap-3 overflow-x-auto no-scrollbar pb-1">
+<div class="flex-1 min-w-[100px] flex flex-col gap-1 rounded-xl p-3 bg-white dark:bg-[#1e232e] border border-gray-200 dark:border-gray-800 shadow-sm relative overflow-hidden group">
+<div class="absolute right-0 top-0 w-16 h-16 bg-orange-50 dark:bg-orange-900/20 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-110"></div>
+<p class="text-gray-500 dark:text-gray-400 text-[10px] font-semibold uppercase tracking-wide z-10">Pendientes</p>
+<p class="text-orange-600 dark:text-orange-500 text-2xl font-bold leading-none z-10">3</p>
+</div>
+<div class="flex-1 min-w-[100px] flex flex-col gap-1 rounded-xl p-3 bg-white dark:bg-[#1e232e] border border-gray-200 dark:border-gray-800 shadow-sm relative overflow-hidden group">
+<div class="absolute right-0 top-0 w-16 h-16 bg-blue-50 dark:bg-blue-900/20 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-110"></div>
+<p class="text-gray-500 dark:text-gray-400 text-[10px] font-semibold uppercase tracking-wide z-10">En Proceso</p>
+<p class="text-blue-600 dark:text-blue-500 text-2xl font-bold leading-none z-10">5</p>
+</div>
+<div class="flex-1 min-w-[100px] flex flex-col gap-1 rounded-xl p-3 bg-white dark:bg-[#1e232e] border border-gray-200 dark:border-gray-800 shadow-sm relative overflow-hidden group">
+<div class="absolute right-0 top-0 w-16 h-16 bg-green-50 dark:bg-green-900/20 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-110"></div>
+<p class="text-gray-500 dark:text-gray-400 text-[10px] font-semibold uppercase tracking-wide z-10">Terminado</p>
+<p class="text-green-600 dark:text-green-500 text-2xl font-bold leading-none z-10">12</p>
+</div>
+</div>
+</section>
+<section aria-label="Filtros de Tareas" class="flex gap-2 overflow-x-auto no-scrollbar">
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary text-white px-5 shadow-sm transition-transform active:scale-95">
+<p class="text-sm font-medium">Pendientes</p>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-white dark:bg-[#1e232e] border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 px-5 transition-transform active:scale-95 hover:bg-gray-50 dark:hover:bg-gray-800">
+<p class="text-sm font-medium">En Proceso</p>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-white dark:bg-[#1e232e] border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 px-5 transition-transform active:scale-95 hover:bg-gray-50 dark:hover:bg-gray-800">
+<p class="text-sm font-medium">Terminado</p>
+</button>
+</section>
+<section aria-label="Lista de Tareas" class="flex flex-col gap-3">
+<div class="group relative flex items-start justify-between gap-4 rounded-xl bg-white dark:bg-[#1e232e] p-4 shadow-sm border border-gray-200 dark:border-gray-800 active:scale-[0.99] transition-all touch-manipulation">
+<div class="flex flex-col gap-1 overflow-hidden">
+<h3 class="text-base font-bold text-gray-900 dark:text-white leading-tight">Instalación Elétrica - Piso 2</h3>
+<p class="text-[10px] font-bold text-gray-400 dark:text-gray-500 uppercase tracking-wider">PORTAL K</p>
+<p class="text-xs text-gray-500 dark:text-gray-400 line-clamp-2 leading-relaxed">Detalle: Revisión de conexiones eléctricas en el sector norte, asegurando la correcta polaridad en todos los puntos de red y tomas de fuerza.</p>
+</div>
+</div>
+<div class="group relative flex items-start justify-between gap-4 rounded-xl bg-white dark:bg-[#1e232e] p-4 shadow-sm border border-gray-200 dark:border-gray-800 active:scale-[0.99] transition-all touch-manipulation">
+<div class="flex flex-col gap-1 overflow-hidden">
+<h3 class="text-base font-bold text-gray-900 dark:text-white leading-tight">Inspección Hidráulica</h3>
+<p class="text-[10px] font-bold text-gray-400 dark:text-gray-500 uppercase tracking-wider">PORTAL K</p>
+<p class="text-xs text-gray-500 dark:text-gray-400 line-clamp-2 leading-relaxed">Detalle: Verificación de presión en tuberías de descarga principal y chequeo de fugas en las juntas de dilatación del bloque B.</p>
+</div>
+</div>
+<div class="group relative flex items-start justify-between gap-4 rounded-xl bg-white dark:bg-[#1e232e] p-4 shadow-sm border border-gray-200 dark:border-gray-800 active:scale-[0.99] transition-all touch-manipulation">
+<div class="flex flex-col gap-1 overflow-hidden">
+<h3 class="text-base font-bold text-gray-900 dark:text-white leading-tight">Limpieza del Terreno</h3>
+<p class="text-[10px] font-bold text-gray-400 dark:text-gray-500 uppercase tracking-wider">PORTAL K</p>
+<p class="text-xs text-gray-500 dark:text-gray-400 line-clamp-2 leading-relaxed">Detalle: Retiro de escombros y materiales sobrantes en zona A para habilitar el paso de maquinaria pesada el próximo lunes.</p>
+</div>
+</div>
+</section>
+</main>
+<nav class="fixed bottom-0 w-full bg-white dark:bg-[#1e232e] border-t border-gray-200 dark:border-gray-800 pb-safe pt-2 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.05)] z-30">
+<div class="flex justify-around items-center pb-3 max-w-sm mx-auto">
+<button class="flex flex-col items-center gap-1 text-primary dark:text-blue-400">
+<span class="material-symbols-outlined fill-current">format_list_bulleted</span>
+<span class="text-[10px] font-medium uppercase tracking-wider">Mis Tareas</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300">
+<span class="material-symbols-outlined">person</span>
+<span class="text-[10px] font-medium uppercase tracking-wider">Perfil</span>
+</button>
+</div>
+</nav>
+
+</body></html>
