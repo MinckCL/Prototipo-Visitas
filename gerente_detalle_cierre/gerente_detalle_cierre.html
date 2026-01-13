@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Detalle de Orden Finalizada con Cierre</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0F172A",
+                        "background-light": "#F3F4F6",
+                        "emerald-accent": "#10B981",
+                        "orange-accent": "#F97316",
+                        "blue-accent": "#3B82F6"
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .timeline-line::before {
+            content: '';
+            position: absolute;
+            left: 11px;
+            top: 24px;
+            bottom: 0;
+            width: 2px;
+            background-color: #E5E7EB;
+        }
+        .timeline-item:last-child .timeline-line::before {
+            display: none;
+        }
+    </style>
+<style>
+        body {
+            min-height: 100dvh;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light font-display text-gray-900 antialiased overflow-x-hidden">
+<div class="relative flex min-h-screen w-full flex-col">
+<header class="bg-primary pt-12 pb-4 px-4 shadow-lg z-20 shrink-0 sticky top-0">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<button class="text-white hover:bg-white/10 p-1 rounded-full transition-colors">
+<span class="material-symbols-outlined text-2xl">arrow_back_ios_new</span>
+</button>
+<h2 class="text-white text-lg font-bold tracking-tight">Detalle de Orden</h2>
+</div>
+<span class="px-3 py-1 rounded-full bg-emerald-accent/20 text-emerald-400 text-[10px] font-bold border border-emerald-accent/30 flex items-center gap-1.5 uppercase">
+<span class="size-2 bg-emerald-accent rounded-full"></span>
+                Terminada
+            </span>
+</div>
+</header>
+<main class="flex-1 overflow-y-auto">
+<div class="p-4 space-y-4">
+<div class="bg-white rounded-2xl p-5 shadow-sm border border-gray-100">
+<div class="mb-6">
+<p class="text-[10px] font-bold text-gray-400 uppercase tracking-wider mb-1">Título</p>
+<h3 class="text-base font-bold text-primary leading-tight">INSPECCIÓN ESTRUCTURAL DE CIMENTACIÓN - SECTOR B</h3>
+</div>
+<div class="grid grid-cols-2 gap-y-4 pt-4 border-t border-gray-50">
+<div class="space-y-0.5">
+<p class="text-[10px] font-bold text-gray-400 uppercase tracking-wider">Obra</p>
+<p class="text-sm font-bold text-primary">Portal K</p>
+</div>
+<div class="space-y-0.5 text-right">
+<p class="text-[10px] font-bold text-gray-400 uppercase tracking-wider">Solicitante</p>
+<p class="text-sm font-semibold text-gray-700">Arq. Marcos V.</p>
+</div>
+<div class="space-y-0.5">
+<p class="text-[10px] font-bold text-gray-400 uppercase tracking-wider">Fecha de Solicitud</p>
+<div class="flex items-center gap-1 text-sm font-medium text-gray-600">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+                            24 Oct, 2023
+                        </div>
+</div>
+<div class="space-y-0.5 text-right">
+<p class="text-[10px] font-bold text-gray-400 uppercase tracking-wider">Asignado</p>
+<div class="flex items-center justify-end gap-1 text-sm font-medium text-gray-600">
+<span class="material-symbols-outlined text-[16px]">engineering</span>
+                            Ing. Salas
+                        </div>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-2xl p-5 shadow-sm border border-gray-100">
+<h3 class="text-[10px] font-bold text-gray-400 uppercase tracking-wider mb-2">Descripción del Requerimiento</h3>
+<p class="text-[15px] leading-relaxed text-gray-700">
+                    Se requiere inspección estructural urgente en la zona de cimentación del sector B. Se han detectado posibles fisuras tras el último vaciado de concreto y es necesario validar la integridad antes de continuar con el nivel superior.
+                </p>
+</div>
+<div class="bg-white rounded-2xl p-5 shadow-sm border border-gray-100">
+<h3 class="text-[10px] font-bold text-gray-400 uppercase tracking-wider mb-3">Foto Original de Reporte</h3>
+<div class="relative group aspect-video rounded-xl overflow-hidden bg-gray-100 border border-gray-200">
+<img alt="Foto Original" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtMhXvZ8l-ycSMs6RCXD0XUzFdOYK51y4WLTot-GXfypj1DNvcKNe83Vluj97-dqbllGIZLE_Hh6gdJnfdAUxN7RaPOT603eMWtW5lo35ExkH4Fd0EixRmKcaH1_en0cf8nh1C5u7mkQWzbEjFVKKeKWFoYZC1EhGMQ5WvEAroyV0rHoaBSyxWt0i-D9dWoCEzUfTMmscCo6dB-bXXuak8AyjUX5tXP_euX5I2H2oG27mpkdLf5kE8b-EJWf8_-H0-6ysWu3yGi3Q"/>
+<button class="absolute inset-0 flex items-center justify-center bg-black/20 opacity-0 group-active:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-white text-3xl">fullscreen</span>
+</button>
+<div class="absolute bottom-3 left-3 bg-black/40 backdrop-blur-md px-2 py-1 rounded text-[10px] text-white flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">photo_camera</span>
+                        Captura Inicial
+                    </div>
+</div>
+</div>
+<div class="bg-white rounded-2xl p-5 shadow-sm border border-gray-100">
+<h3 class="text-[10px] font-bold text-gray-400 uppercase tracking-wider mb-6">Historial de Avances</h3>
+<div class="space-y-0">
+<div class="timeline-item relative pl-8 pb-8 timeline-line">
+<div class="absolute left-0 top-1.5 size-6 rounded-full bg-emerald-accent flex items-center justify-center z-10">
+<span class="material-symbols-outlined text-white text-[14px]">check</span>
+</div>
+<div class="space-y-2">
+<div class="flex justify-between items-start">
+<p class="text-[11px] font-bold text-emerald-accent uppercase">Visita Iniciada</p>
+<p class="text-[10px] text-gray-400">25 Oct • 09:15 AM</p>
+</div>
+<p class="text-sm text-gray-600">Personal en sitio. Se inicia la limpieza de la superficie para una mejor visualización de las fisuras reportadas.</p>
+</div>
+</div>
+<div class="timeline-item relative pl-8 pb-8 timeline-line">
+<div class="absolute left-0 top-1.5 size-6 rounded-full bg-emerald-accent flex items-center justify-center z-10">
+<span class="material-symbols-outlined text-white text-[14px]">check</span>
+</div>
+<div class="space-y-2">
+<div class="flex justify-between items-start">
+<p class="text-[11px] font-bold text-emerald-accent uppercase">Evaluación Finalizada</p>
+<p class="text-[10px] text-gray-400">25 Oct • 14:30 PM</p>
+</div>
+<p class="text-sm text-gray-600">Se terminaron las pruebas de esclerometría en el eje 4-C con resultados satisfactorios.</p>
+</div>
+</div>
+<div class="timeline-item relative pl-8">
+<div class="absolute left-0 top-1.5 size-6 rounded-full bg-emerald-accent flex items-center justify-center z-10">
+<span class="material-symbols-outlined text-white text-[14px]">task_alt</span>
+</div>
+<div class="space-y-1">
+<p class="text-[11px] font-bold text-emerald-accent uppercase">Cierre de Orden</p>
+<p class="text-sm text-gray-600">Orden marcada como terminada con éxito.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-2xl p-5 shadow-sm border border-gray-100">
+<h3 class="text-[10px] font-bold text-gray-400 uppercase tracking-wider mb-2">DESCRIPCIÓN DEL CIERRE</h3>
+<p class="text-[15px] leading-relaxed text-gray-700">
+                    Tras la inspección detallada y las pruebas de esclerometría realizadas, se concluye que las fisuras detectadas son superficiales y de carácter estético, no comprometiendo la integridad estructural de la cimentación en el Sector B. Los valores de resistencia obtenidos superan los 280 kg/cm² requeridos por diseño. Se autoriza la continuación de los trabajos en el nivel superior de forma inmediata.
+                </p>
+</div>
+<div class="bg-white rounded-2xl p-5 shadow-sm border border-gray-100">
+<h3 class="text-[10px] font-bold text-gray-400 uppercase tracking-wider mb-3">FOTO ORIGINAL DEL CIERRE</h3>
+<div class="relative group aspect-video rounded-xl overflow-hidden bg-gray-100 border border-gray-200">
+<img alt="Foto Cierre" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtMhXvZ8l-ycSMs6RCXD0XUzFdOYK51y4WLTot-GXfypj1DNvcKNe83Vluj97-dqbllGIZLE_Hh6gdJnfdAUxN7RaPOT603eMWtW5lo35ExkH4Fd0EixRmKcaH1_en0cf8nh1C5u7mkQWzbEjFVKKeKWFoYZC1EhGMQ5WvEAroyV0rHoaBSyxWt0i-D9dWoCEzUfTMmscCo6dB-bXXuak8AyjUX5tXP_euX5I2H2oG27mpkdLf5kE8b-EJWf8_-H0-6ysWu3yGi3Q"/>
+<button class="absolute inset-0 flex items-center justify-center bg-black/20 opacity-0 group-active:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-white text-3xl">fullscreen</span>
+</button>
+<div class="absolute bottom-3 left-3 bg-emerald-500/80 backdrop-blur-md px-2 py-1 rounded text-[10px] text-white flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">verified</span>
+                        Evidencia Final
+                    </div>
+</div>
+</div>
+<div class="pb-6"></div>
+</div>
+</main>
+</div>
+
+</body></html>
