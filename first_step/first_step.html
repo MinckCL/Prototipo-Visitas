@@ -21,7 +21,12 @@
                     fontFamily: {
                         "display": ["Inter", "sans-serif"]
                     },
-                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem" },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem"
+                    },
                 },
             },
         }
@@ -35,6 +40,11 @@
         }
         .ios-shadow {
             box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.08);
+        }
+    </style>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
         }
     </style>
 <style>
@@ -65,21 +75,14 @@
 <button class="flex w-full items-center justify-between rounded-xl bg-primary hover:bg-slate-800 text-white touch-target px-5 text-base font-semibold shadow-md shadow-primary/10 active:scale-[0.98] transition-all group">
 <div class="flex items-center gap-3">
 <span class="material-symbols-outlined text-[24px] opacity-80">manage_accounts</span>
-<span>Gerente</span>
-</div>
-<span class="material-symbols-outlined text-[20px] opacity-50 group-hover:translate-x-1 transition-transform">chevron_right</span>
-</button>
-<button class="flex w-full items-center justify-between rounded-xl bg-primary hover:bg-slate-800 text-white touch-target px-5 text-base font-semibold shadow-md shadow-primary/10 active:scale-[0.98] transition-all group">
-<div class="flex items-center gap-3">
-<span class="material-symbols-outlined text-[24px] opacity-80">engineering</span>
-<span>Jefe de Obra</span>
+<span>Gerencial</span>
 </div>
 <span class="material-symbols-outlined text-[20px] opacity-50 group-hover:translate-x-1 transition-transform">chevron_right</span>
 </button>
 <button class="flex w-full items-center justify-between rounded-xl bg-primary hover:bg-slate-800 text-white touch-target px-5 text-base font-semibold shadow-md shadow-primary/10 active:scale-[0.98] transition-all group">
 <div class="flex items-center gap-3">
 <span class="material-symbols-outlined text-[24px] opacity-80">construction</span>
-<span>Trabajador</span>
+<span>Operacional</span>
 </div>
 <span class="material-symbols-outlined text-[20px] opacity-50 group-hover:translate-x-1 transition-transform">chevron_right</span>
 </button>
@@ -90,7 +93,7 @@
 <span class="material-symbols-outlined text-[14px]">lock</span>
 <span>Conexión Segura</span>
 </div>
-<div class="h-1 w-32 bg-gray-300 dark:bg-gray-700 rounded-full mt-2"></div> 
+<div class="h-1 w-32 bg-gray-300 dark:bg-gray-700 rounded-full mt-2"></div>
 </footer>
 </main>
 </div>
